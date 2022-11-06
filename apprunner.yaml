@@ -6,4 +6,4 @@ build:
       - pip install fastapi
       - pip install uvicorn
 run: 
-  command: uvicorn main:app --reload
+  command: uvicorn main:app --reload --port 8080
