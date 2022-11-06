@@ -1,0 +1,11 @@
+version: 1.0
+runtime: python3 
+build:
+  commands:
+    build:
+      - pip install pipenv
+      - pipenv install 
+      - pip install fastapi
+      - pip install uvicorn
+run: 
+  command: uvicorn main:app --reload
